@@ -5,6 +5,13 @@ netzwelt/login - login page
 netzwelt/public - public page
 netzwelt/home - home page
 
+Controller: 
+app/Http/Controllers/NetzweltController.php
+
+Routes:
+routes/web.php
+
+Credentials
 username: jing
 password: pass
 
