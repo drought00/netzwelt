@@ -10,10 +10,7 @@ class NetzweltController extends Controller
 {
     public function login(Request $request){
         if($request->username == "jing" && $request->password == "pass"){
-            session([
-                'username'=>$request->username,
-                'password'=>$request->password
-                ]);
+            session(['username'=>$request->username]);
             return view('home');
         }
         return redirect('netzwelt/login')->with('error', 'invalid credentials!');
